@@ -12,8 +12,8 @@ class LLNavbar extends HTMLElement {
                 <p class="tagline">the best country</p>
             </div>
             <div class="nav-links">
-                <a href="./wetten/index.html" class="light-text">Wetten</a>
-                <a href="./bezoek/index.html" class="btn-signup">Bezoek Lucasland</a>
+                <a href="/wetten/index.html" class="light-text">Wetten</a>
+                <a href="/bezoek/index.html" class="btn-signup">Bezoek Lucasland</a>
             </div>
         </nav>
         `;
