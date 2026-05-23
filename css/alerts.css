@@ -1,0 +1,64 @@
+/* ------------------ */
+/*  Snippflow Alerts  */
+/* ------------------ */
+
+.sf-alert {
+  --sf-alert-success-bg: #d4edda;
+  --sf-alert-success-text: #155724;
+  --sf-alert-success-icon: #28a745;
+  --sf-alert-success-link: #155724;
+
+  --sf-alert-error-bg: #f8d7da;
+  --sf-alert-error-text: #721c24;
+  --sf-alert-error-icon: #dc3545;
+  --sf-alert-error-link: #721c24;
+
+  --sf-alert-warning-bg: #fff3cd;
+  --sf-alert-warning-text: #856404;
+  --sf-alert-warning-icon: #ffc107;
+  --sf-alert-warning-link: #856404;
+
+  --sf-alert-info-bg: #d1ecf1;
+  --sf-alert-info-text: #0c5460;
+  --sf-alert-info-icon: #17a2b8;
+  --sf-alert-info-link: #0c5460;
+}
+
+.sf-alert { display: flex; align-items: center; gap: 20px; margin: 15px 0; padding:15px 20px; border-radius: 4px; }
+.sf-alert .alert-icon { flex-shrink:0; font-size: 24px; }
+.sf-alert .alert-content { flex-grow: 1; }
+.sf-alert .alert-content > * ~ * { margin-top: 10px; }
+.sf-alert .alert-content ul { margin-left: 20px; }
+.sf-alert .alert-content a { text-decoration: underline; }
+.sf-alert .alert-content a:hover { text-decoration: none; }
+.sf-alert a.alert-close{ display: flex; align-items: center; justify-content: center; flex-shrink:0; width: 30px; height: 30px; border-radius: 4px; font-size: 18px; text-decoration: none; }
+.sf-alert a.alert-close:hover { background-color: rgba(0, 0, 0, 0.03); }
+
+.success { color: var(--sf-alert-success-text); background-color: var(--sf-alert-success-bg); }
+.success a { color: var(--sf-alert-success-link); }
+.success .alert-icon { color: var(--sf-alert-success-icon); }
+
+.error { color: var(--sf-alert-error-text); background-color: var(--sf-alert-error-bg); }
+.error a { color: var(--sf-alert-error-link); }
+.error .alert-icon { color: var(--sf-alert-error-icon); }
+
+.warning { color: var(--sf-alert-warning-text); background-color: var(--sf-alert-warning-bg); }
+.warning a { color: var(--sf-alert-warning-link); }
+.warning .alert-icon { color: var(--sf-alert-warning-icon); }
+
+.info { color: var(--sf-alert-info-text); background-color: var(--sf-alert-info-bg); }
+.info a { color: var(--sf-alert-info-link); }
+.info .alert-icon { color: var(--sf-alert-info-icon); }
+
+.hidden-div {
+    display: none; /* Takes up no space */
+    background: var(--bapi-bg);
+    border: 1px solid var(--bapi-green);
+    padding: 20px;
+    color: white;
+}
+
+/* Optional: Class to show it */
+.show {
+    display: block !important;
+}
