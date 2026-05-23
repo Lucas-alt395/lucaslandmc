@@ -3,4 +3,10 @@ Lucasland
 GRONDWET
 versie 1, 23/05/2026
 
-test
+De Grondwet is een wet bepaald door De Wet van Wetten.
+
+Sectie 1 - Rechten:
+    .1: Iedereen mag zichzelf zijn. Geen discriminatie.
+
+Sectie 3 - Bij overtreding:
+    .1: De Strafwet bepaald wat er gebeurd.
