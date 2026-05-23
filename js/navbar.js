@@ -20,6 +20,22 @@ class LLNavbar extends HTMLElement {
     }
 }
 
+class LLSecNavbar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <nav class="topbar">
+            <div class="logo-area">
+                <a href="/" style="text-decoration: none;"><h1>Lucasland</h1></a>
+                <p class="tagline">the best country</p>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="light-text">Terug</a>
+            </div>
+        </nav>
+        `;
+    }
+}
+
 class LLFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -43,6 +59,7 @@ class LLFooter extends HTMLElement {
 
 // Navbar
 customElements.define('ll-navbar', LLNavbar);
+customElements.define('sec-navbar', LLSecNavbar);
 
 // Footer
 customElements.define('ll-footer', LLFooter);
